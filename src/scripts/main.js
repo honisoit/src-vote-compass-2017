@@ -88,9 +88,8 @@ function displayResults () {
       jQuery(".VC-results-similarity").text(
         "You are " + voterSimilarities[0].percentage + "% similar."
       );
-      jQuery(".VC-results-slogan").text("Slogan: " + candidateInfo[winningID].slogan);
       jQuery(".VC-results-faction").text("Factional allegiance: " + candidateInfo[winningID].faction);
-      jQuery(".VC-results-summary").text(`You were also close to ${secondName} (${secondPercentage}%) and ${thirdName} (${thirdPercentage}%).`);
+      jQuery(".VC-results-summary").text(`People you are not: ${secondName} (${secondPercentage}%) and ${thirdName} (${thirdPercentage}%).`);
       jQuery(".VC-results-panel").fadeIn();
       pymChild.sendHeight();
     }
